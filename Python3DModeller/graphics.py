@@ -21,6 +21,7 @@ class GraphicsEngine:
 
         # Detect and use existing OpenGl Context
         self.ctx = mgl.create_context()
+        self.ctx.enable(flags=mgl.DEPTH_TEST)
 
         # Create an object to track time
         self.clock = pg.time.Clock()
@@ -48,8 +49,12 @@ class GraphicsEngine:
         # Swap buffers
         pg.display.flip()
 
+    def get_time(self):
+        self.time = pg.time.get_ticks() * 0.001
+
     def run(self):
         while True:
+            self.get_time()
             self.check_events()
             self.render()
             self.clock.tick(60)
