@@ -11,4 +11,4 @@ $ pip install pygame
 ```
 
 ## How to run
-Run `main.py` in the `Python3DModeller` directory. You should see a cardboard box rotating as of v0.01.
+Run `main.py` in the `Python3DModeller` directory. You should see a cardboard box rotating as of [v0.01](https://github.com/hamdivazim/Python-3D-Renderer/tree/v0.01-beta).
