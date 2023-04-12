@@ -11,4 +11,4 @@ $ pip install pygame
 ```
 
 ## How to run
-Run `main.py` in the `Python3DModeller` directory. You should see a cardboard box rotating as of [v0.01](https://github.com/hamdivazim/Python-3D-Renderer/tree/v0.01-beta). As of [v0.1](https://github.com/hamdivazim/Python-3D-Renderer/tree/v0.1-beta), you should be able to control camera movement with the mouse and the keys w,a,s,d,q,e.
+Run `main.py` in the `Python3DModeller` directory. You should see a cardboard box rotating as of [v0.01](https://github.com/hamdivazim/Python-3D-Renderer/tree/v0.01-beta). As of [v0.1](https://github.com/hamdivazim/Python-3D-Renderer/tree/v0.1-beta), you should be able to control camera movement with the mouse and the keys w,a,s,d,q,e. Use the ESCAPE key when done.
