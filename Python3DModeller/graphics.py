@@ -19,6 +19,10 @@ class GraphicsEngine:
         # Create OpenGL context
         pg.display.set_mode(self.WIN_SIZE, flags=pg.OPENGL | pg.DOUBLEBUF)
 
+        # Mouse
+        pg.event.set_grab(True)
+        pg.mouse.set_visible(False)
+
         # Detect and use existing OpenGl Context
         self.ctx = mgl.create_context()
         self.ctx.enable(flags=mgl.DEPTH_TEST)
@@ -31,6 +35,8 @@ class GraphicsEngine:
 
         # Scene
         self.scene = Cube(self)
+
+        self.delta_time = 0
 
     def check_events(self):
         for event in pg.event.get():
@@ -56,5 +62,6 @@ class GraphicsEngine:
         while True:
             self.get_time()
             self.check_events()
+            self.camera.update()
             self.render()
-            self.clock.tick(60)
+            self.delta_time = self.clock.tick(60)
